@@ -4,6 +4,8 @@ pnpm deploy --prod problem
 
 In a monorepo, the `pnpm --filter deploy` command is copying **ALL** production packages, even from others projects.
 
+[Issue in pnpm](https://github.com/pnpm/pnpm/issues/6437)
+
 ## Reproduce
 ```sh
 corepack enable # to use the right version of pnpm
