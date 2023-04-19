@@ -31,3 +31,5 @@ The result is the next one
 ```
 
 We should **NOT** have `webpack` inside our `my-app-dist/node_modules` folder, since is it belongs to `other-app` project.
+
+and we can also find `prettier` in `my-app-dist/node_modules/.pnpm/prettier@2.8.7`, that belongs to root monorepo package.json
