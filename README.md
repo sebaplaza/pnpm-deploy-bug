@@ -2,7 +2,7 @@
 
 pnpm deploy --prod problem
 
-In a monorepo, the `pnpm --filter deploy` command is copying **ALL** production packages, event from others projects.
+In a monorepo, the `pnpm --filter deploy` command is copying **ALL** production packages, even from others projects.
 
 ## Reproduce
 ```sh
@@ -30,4 +30,4 @@ The result is the next one
 └── README.md
 ```
 
-We should not have "webpack" inside our `my-app-dist/node_modules` folder, since is it belongs to `other-app` project.
+We should **NOT** have `webpack` inside our `my-app-dist/node_modules` folder, since is it belongs to `other-app` project.
